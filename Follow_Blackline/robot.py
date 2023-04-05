@@ -31,7 +31,7 @@ class MyRobot(TimedRobot):
         # forward = self.controller.getRawAxis(0)
         # rotate = self.controller.getRawAxis(1)
         # self.drivetrain.drive(forward, rotate)
-        pass
+        self.linefollower.run()
 
 if __name__ == "__main__":
     os.environ["HALSIMWS_HOST"] = "10.0.0.2"

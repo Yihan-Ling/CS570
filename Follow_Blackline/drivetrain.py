@@ -8,5 +8,5 @@ class Drivetrain:
         self.right_motor = Spark(1)
         self.drivetrain = DifferentialDrive(self.left_motor, self.right_motor)
 
-    def drive(self, forward, rotate):
-        self.drivetrain.arcadeDrive(forward, rotate)
+    def drive(self, rotate, forward):
+        self.drivetrain.arcadeDrive(rotate, forward)
